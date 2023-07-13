@@ -1,0 +1,73 @@
+.control {
+  display: inline-block;
+  position: relative;
+}
+
+
+.control__label {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.control__label-text {
+  text-align: left;
+  padding-left: 7px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.control .control__mark--circle {
+  position: absolute;
+  width: 22px;
+  border-radius: 50%;
+  height: 22px;
+  left: -3px;
+  border: solid 2px #bdbdbd;
+  background: #ffffff;
+}
+
+.control__input:checked + .control__mark--circle {
+  background: #f2f2f2;
+  background-size: 16px;
+  background-image: url("/source/img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: 3px;
+  border: solid 2px #7859cf;
+}
+
+.control:disabled + .control__label {
+  opacity: 0.6;
+  background: #e2e2e2;
+  color: #e2e2e2;
+}
+
+.control .control__mark {
+  display: inline-block;
+  width: 42px;
+  position: relative;
+  background: #bdbdbd;
+  border-radius: 12px;
+  height: 24px;
+}
+
+.control .control__mark::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  height: 20px;
+  top: 2px;
+  left: 1px;
+}
+
+.control__input:checked + .control__mark {
+  background: #7859cf;
+}
+
+.control__input:checked + .control__mark::before {
+  left: 20px;
+}

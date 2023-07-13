@@ -1,0 +1,130 @@
+.product__container {
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+.product__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 317px 317px 317px;
+    padding-left: 349px;
+    gap: 37px;
+  }
+}
+
+.product__card {
+  background-color: #ffffff;
+  width: 280px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 349px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    width: 318px;
+  }
+}
+
+.product__card-link img {
+  display: block;
+  margin: 10px auto 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 43px auto 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 25px auto 20px;
+  }
+}
+
+.product__link {
+  font-weight: 700;
+  text-align: left;
+  color: #333333;
+  text-decoration: none;
+}
+
+.product__card-title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    padding-top: 27px;
+    padding-bottom: 18px;
+  }
+}
+
+.product__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.product__card-price {
+  font-weight: 700;
+  margin: 0;
+  padding-top: 10px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.product__card-button-detail {
+  padding: 8px 20px;
+  width: 141px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.product__icon {
+  background-image: url("./img/basket-bt.svg");
+  background-size: 20px 16px;
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+  }
+}
